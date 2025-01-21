@@ -9,9 +9,16 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
+    --background: #ffffff;
     --foreground: #ededed;
   }
+}
+
+@font-face {
+  font-family: 'Lora';
+  src: url('/fonts/Lora-VariableFont_wght.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
 }
 
 body {

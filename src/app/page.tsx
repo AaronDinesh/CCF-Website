@@ -1,5 +1,6 @@
 import Image from "next/image";
-
+import { Greet }  from "./components/greet";
+import { Counter } from "./components/counter";
 export default function Home() {
   return (
     <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
@@ -12,7 +13,9 @@ export default function Home() {
           height={38}
           priority
         />
-        <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
+        <Greet />
+        <Counter />
+        <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)] text-black">
           <li className="mb-2">
             Get started by editing{" "}
             <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
@@ -20,10 +23,10 @@ export default function Home() {
             </code>
             .
           </li>
-          <li>Save and see your changes instantly.</li>
+          <li>Hello World</li>
         </ol>
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
+        <div className="flex gap-4 items-center flex-col sm:flex-row text-black">
           <a
             className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
             href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
@@ -31,7 +34,7 @@ export default function Home() {
             rel="noopener noreferrer"
           >
             <Image
-              className="dark:invert"
+              className="dark:invert text-black"
               src="/vercel.svg"
               alt="Vercel logomark"
               width={20}
